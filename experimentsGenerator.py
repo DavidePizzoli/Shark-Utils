@@ -15,7 +15,7 @@ def main():
             else:
                 h.close()
                 h = gzip.open(x[1:].rstrip() + ".fasta.gz", "wt") # Il nome del file dev'essere l'identificativo del gene
-            h.write(x) # La prima riga del file è ancora l'identificativo del gene
+            h.write(x) # La prima riga del file e' ancora l'identificativo del gene
         else:
             h.write(x)
             
