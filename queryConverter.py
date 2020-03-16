@@ -14,7 +14,7 @@ def main():
         else:
             if(i % 4 == 2):
                 sys.stdout.write(x)
-    f.close();
+    f.close()
     
 if __name__ == '__main__':
     main()
