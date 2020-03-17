@@ -7,15 +7,15 @@ This workspace will contain:
 # usage
 To create the Query file input for HowDeSBT from Shark sample fastq file
 
-[zcat/cat] [Input FASTQ File] | python queryConverter.py > [Input FASTA File]
+	[zcat/cat] [Input FASTQ File] | python queryConverter.py > [Input FASTA File]
 
 To create the Experiment files input for HowDeSBT from Shark genes list file
 
-[zcat/cat] [Genes List File] | python experimentsGenerator.py
+	[zcat/cat] [Genes List File] | python experimentsGenerator.py
 
 To create the Query file input for HowDeSBT from Shark sample fastq file
 
-[zcat/cat] [Output DAT File] | python outputConverter.py > [Output SSV File]
+	[zcat/cat] [Output DAT File] | python outputConverter.py > [Output SSV File]
 
 # examples
 
