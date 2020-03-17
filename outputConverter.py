@@ -6,9 +6,9 @@ def main():
     flag = 0
     for (i,x) in enumerate(sys.stdin,1):
         fields = x.split(" ")
-        if(x[:2] == "*@" and int(fields[1]) > 0): # Leggo l'identificativo del gene
+        if(x[:2] == "*" and int(fields[1]) > 0): # Leggo l'identificativo del gene
             flag = 1;
-            sys.stdout.write(fields[0].rstrip()[2:] + " ")
+            sys.stdout.write(fields[0].rstrip()[1:] + " ")
         else:
             if(flag == 1):
                 sys.stdout.write(fields[0] + "\n")

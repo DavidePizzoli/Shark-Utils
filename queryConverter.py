@@ -5,7 +5,7 @@ def main():
     # Operazioni sul file delle queries (Conversione da FASTQ a FASTA)
     for (i,x) in enumerate(sys.stdin,1):
         if(i % 4 == 1):
-            sys.stdout.write(">" + x)
+            sys.stdout.write(">" + x[1:])
         else:
             if(i % 4 == 2):
                 sys.stdout.write(x)
