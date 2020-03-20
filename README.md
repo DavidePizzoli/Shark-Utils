@@ -18,7 +18,7 @@ To create the Experiment files input for HowDeSBT from Shark genes list file
 
 To create the Query file input for HowDeSBT from Shark sample fastq file
 
-	python outputConverter.py < [Output DAT File] > [Output SSV File]
+	python outputConverter.py [SINGLE/MULTIPLE] < [Output DAT File] > [Output SSV File]
 
 # examples
 
@@ -28,4 +28,4 @@ python queryConverter.py < query.fa > cleaned.query.fa
 
 python experimentsGenerator.py < test.fa
 
-python outputConverter.py < test.dat > test.ssv
+python outputConverter.py MULTIPLE < test.dat > test.ssv
