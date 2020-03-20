@@ -16,7 +16,7 @@ def main():
         fields = x.split(" ")
         if(x[:1] == "*" and int(fields[1]) > 0): # Leggo l'identificativo del gene
             flag = 1;
-            if(st.count("@") > 1):
+            if(st.count("\n") > 1):
                 if(method.lower() == "multiple"):
                     sys.stdout.write(st)
             else:
