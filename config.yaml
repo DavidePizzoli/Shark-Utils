@@ -1,0 +1,7 @@
+data : ""
+folders :
+  input : "input"
+  output : "output"
+params:
+  k : 17
+  BF_size: 100

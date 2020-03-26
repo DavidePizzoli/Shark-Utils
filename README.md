@@ -3,7 +3,8 @@ This workspace will contain:
 - a Python script that converts a Shark's input file (containing a list of genes) in a group of experiments (input of HowDeSBT);
 - a Python script that converts a Shark's queries input file in a HowDeSBT's queries input file;
 - a Python script that removes dubtful character from sequences in query file;
-- a Python script that converts a Shark's output file in a HowDeSBT's output file.
+- a Python script that converts a Shark's output file in a HowDeSBT's output file;
+- a Snakefile with its configuration file.
 
 # usage
 To create the Query file input for HowDeSBT from Shark sample fastq file
