@@ -1,7 +1,9 @@
 data : ""
 folders :
   input : "input"
-  output : "output"
+  output : 
+    default: "output"
+    queries: "output/queries"
 params:
   k : 17
-  BF_size: 100
+  BF_size: 80
