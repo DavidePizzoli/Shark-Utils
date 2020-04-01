@@ -1,0 +1,12 @@
+
+# Ignore log files
+.snakemake/
+
+# Ignore large inputs
+input/beds/*
+!input/beds/sample_truth.run_1.truth.bed
+input/samples/*
+!input/samples/sample_truth.fastq.gz
+
+# Ignore output directory
+output/

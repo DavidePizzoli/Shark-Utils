@@ -1,9 +1,12 @@
-data : ""
-folders :
+data: ""
+folders:
   input : "input"
   output : 
     default: "output"
     queries: "output/queries"
 params:
-  k : 17
-  BF_size: 80
+  k: 17
+  BF_size: 100
+  samples: ["50k", "truth"]
+  types: ["raw", "cleaned"]
+  genes: "genes"
