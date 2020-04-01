@@ -7,6 +7,6 @@ folders:
 params:
   k: 17
   BF_size: 100
-  samples: ["50k", "truth"]
+  samples: "truth"
   types: ["raw", "cleaned"]
-  genes: "genes"
+  genes: ["genes", "test"]

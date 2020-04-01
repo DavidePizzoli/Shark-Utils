@@ -56,14 +56,14 @@ rule queryCleaner:
 # Creazione dei files "experiment" (uno per ogni gene del file "gene.fa")
 checkpoint experimentsGenerator:
   input:
-    genes = os.path.join(in_folder,"genes","{genes}.fa"),
+    genesFa = os.path.join(in_folder,"genes","{genes}.fa"),
     script = os.path.join("script","experimentsGenerator.py")
   output:
     directory(os.path.join(out_folder,"experiments","{genes}"))
   shell:
     """
     mkdir -p {output}
-    python3 {input.script} {output} < {input.genes}
+    python3 {input.script} {output} < {input.genesFa}
     """
   
 # Regola di supporto: i files degli esperimenti vengono decompressi
@@ -178,7 +178,7 @@ rule queryCheck:
     structure = os.path.join(out_folder, "{genes}_k{k}_BFsize{BF_sz}","tree","howde.sbt"),
     queries = os.path.join(out_folder,"{genes}_k{k}_BFsize{BF_sz}","queries","queries_{sample}.{type}.ssv"),
     beds = os.path.join(in_folder,"beds","sample_{sample}.run_1.truth.bed"),
-    gtf = os.path.join(in_folder,"genes","genes.gtf"),
+    gtf = os.path.join(in_folder,"genes","{genes}.gtf"),
     script = os.path.join("script","check_shark.py")
   output:
     os.path.join(out_folder, "{genes}_k{k}_BFsize{BF_sz}","checks","results_{sample}_{type}")
